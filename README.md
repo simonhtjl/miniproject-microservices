@@ -13,5 +13,12 @@ this service using mySql,if there's any trouble with connection to dabatase plea
 
 script and postman collection already put in this repo
 
+script name miniproject.sql
+collection name MiniProject.postman_collection.json
+
+spring version 2.7.18
+Jdk 1.8
+Java version 8
+
 sorry there's no UI only postman,i couldnt catch up with the deadline
 

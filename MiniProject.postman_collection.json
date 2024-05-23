@@ -1,0 +1,425 @@
+{
+	"info": {
+		"_postman_id": "c06d2670-e437-4f82-b68c-341f83ce4891",
+		"name": "MiniProject",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "32241021"
+	},
+	"item": [
+		{
+			"name": "CRUD Buku",
+			"item": [
+				{
+					"name": "CreateBuku",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"judul\" : \"Clean Architecture\",\r\n    \"penulis\":\"Uncle Bob\",\r\n    \"tahun\":\"1999\",\r\n    \"jumlah\":10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/admin-service/api/buku/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin-service",
+								"api",
+								"buku",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetAllBuku",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admin-service/api/buku/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin-service",
+								"api",
+								"buku",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteBuku",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admin-service/api/buku/delete/31f8d0fe-0329-462d-b4b7-29f1bfcf61d1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin-service",
+								"api",
+								"buku",
+								"delete",
+								"31f8d0fe-0329-462d-b4b7-29f1bfcf61d1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Buku",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"judul\" : \"Clean Architecture 2\",\r\n    \"penulis\":\"Uncle Bob\",\r\n    \"tahun\":\"1999\",\r\n    \"jumlah\":10\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/admin-service/api/buku/update/7528fc5f-0559-4b7c-b33c-1cc713256380",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin-service",
+								"api",
+								"buku",
+								"update",
+								"7528fc5f-0559-4b7c-b33c-1cc713256380"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CRUD Ruangan",
+			"item": [
+				{
+					"name": "GetAllRuangan",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admin-service/api/ruangan/all",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin-service",
+								"api",
+								"ruangan",
+								"all"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateRuangan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"no\" : \"BLK-07\",\r\n    \"status\" : \"Available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/admin-service/api/ruangan/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin-service",
+								"api",
+								"ruangan",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteRuangan",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/admin-service/api/ruangan/delete/3ea30bd0-4e12-4225-9fa6-1fdabba60dfd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin-service",
+								"api",
+								"ruangan",
+								"delete",
+								"3ea30bd0-4e12-4225-9fa6-1fdabba60dfd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UpdateRuangan",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"no\" : \"BLK-01\",\r\n    \"status\" : \"Not Available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/admin-service/api/ruangan/update/a266caa8-0336-48d5-a760-7ba05dabbfa6",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"admin-service",
+								"api",
+								"ruangan",
+								"update",
+								"a266caa8-0336-48d5-a760-7ba05dabbfa6"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Order",
+			"item": [
+				{
+					"name": "OrderRuangan",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateFrom\" : \"2024-05-24T12:30:00\",\r\n    \"dateTo\" : \"2024-05-23T02:30:00\",\r\n    \"studentName\" : \"simonhtjl\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/order-service/api/order/ruangan/33b01e06-654b-4414-80e8-119258c91fbd",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"order-service",
+								"api",
+								"order",
+								"ruangan",
+								"33b01e06-654b-4414-80e8-119258c91fbd"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Approve Order",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/order-service/api/order/ruangan/approve/872a9240-33d7-4f77-acaf-166ec9204b66",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"order-service",
+								"api",
+								"order",
+								"ruangan",
+								"approve",
+								"872a9240-33d7-4f77-acaf-166ec9204b66"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "BorrowBuku",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"dateFrom\" : \"2024-05-24T12:30:00\",\r\n    \"dateTo\" : \"2024-05-24T15:30:00\",\r\n    \"studentName\" : \"simonhtjl\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8081/order-service/api/order/buku/7528fc5f-0559-4b7c-b33c-1cc713256380",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"order-service",
+								"api",
+								"order",
+								"buku",
+								"7528fc5f-0559-4b7c-b33c-1cc713256380"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ReturnedBuku",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8081/order-service/api/order/buku/returned/a279edfe-e91d-4d01-aaf1-508c53fba603",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8081",
+							"path": [
+								"order-service",
+								"api",
+								"order",
+								"buku",
+								"returned",
+								"a279edfe-e91d-4d01-aaf1-508c53fba603"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Auth",
+			"item": [
+				{
+					"name": "Register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"simonhtjl\",\r\n    \"email\" : \"simonhtjl@gmail.com\",\r\n    \"password\" : \"seaways\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/auth/register",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"auth",
+								"register"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"username\" : \"simonhtjl@gmail.com\",\r\n    \"password\" : \"seaways\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8083/auth/token",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8083",
+							"path": [
+								"auth",
+								"token"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
